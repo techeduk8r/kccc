@@ -1,0 +1,65 @@
+/* accordian test css */
+body
+
+.accordian {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+
+.wrapper	{
+	max-width: 600px;
+	padding: 0 20px;
+}
+
+
+.wrapper .parent-tab {
+	margin-bottom: 4px;
+}
+
+
+.wrapper .parent-tab	label {
+	background: #00afaa;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+	z-index: 99;
+}
+
+.wrapper label span {
+	color: #ffffff;
+	font-size: 18px;
+
+}
+
+.wrapper label .icon {
+	position: relative;
+	height: 30px;
+	width: 30px;
+	color: #ffffff;
+	display: block;
+}
+
+.wrapper label .icon i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.wrapper .parent-tab .content {
+	max-height: 0px;
+	overflow: hidden;
+}
+
+
+.wrapper .parent-tab .content p	{
+	font-size: 15px;
+	padding: 15px 20px;
+}

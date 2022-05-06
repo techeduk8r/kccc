@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kitty City Clicker Club</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- responsive top nav -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: Bebas Neue, sans-serif;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #00afaa;
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+		}
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.active {
+			background-color: #FFcd00;
+			color: white;
+		}
+
+		.topnav .icon {
+			display: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 20px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: fixed;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.topnav a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: #ddd;
+			color: #00afaa;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+			color: #00afaa;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		@media screen and (max-width: 600px) {
+
+			.topnav a:not(:first-child),
+			.dropdown .dropbtn {
+				display: none;
+			}
+
+			.topnav a.icon {
+				float: right;
+				display: block;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.topnav.responsive {
+				position: fixed;
+			}
+
+			.topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+
+			.topnav.responsive .dropdown {
+				float: none;
+			}
+
+			.topnav.responsive .dropdown-content {
+				position: fixed;
+			}
+
+			.topnav.responsive .dropdown .dropbtn {
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--top button -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+	<div class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Training Techniques
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="training.html">Training Overview</a>
+				<a href="capturing.html">Capturing</a>
+				<a href="targeting.html">Targeting</a>
+				<a href="luring.html">Luring</a>
+				<a href="shaping.html">Shaping</a>
+			</div>
+		</div>
+		<a href="enrichment.html">Enrichment</a>
+		<a href="foster.html">Foster Resources</a>
+		<a href="about.html" class="active">About KCCC</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div>
+		<video autoplay muted loop src="media/KC3SampleHeader.mp4"></video>
+	</div>
+
+	<div class="row">
+		<div class="main">
+			<h1>ABOUT KCCC</h1>
+			<p>
+				In January of 2020 PAWS Chicago was accepted into the <a href="https://greatergood.org/jackson-galaxy"> Jackson Galaxy Project Cat Pawsitive clicker training program</a>. A team of volunteers began learning about clicker training and how it could enrich the lives of some of our longer-term feline residents. This training program was cut short by the COVID pandemic but had generated interest in providing this type of enrichment.
+			</p>
+			<p>Beginning in fall of 2020, the Jackson Galaxy Foundation opened a new round of clicker training facility applications. PAWS jumped at the chance to participate and was excited to be selected for the advanced version of the program, Cat Pawsitive Pro.
+			</p>
+			<p>Led by Erin Mayes, Associate Director Feline Behavior, a new team of PAWS volunteers began clicker training. Over the course of four months, a team of six volunteers worked with Erin to learn core training techniques and provide enrichment for six cats who had been with PAWS for an extended period of time.
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<img class="imgside" src="images/CPP2020sm.jpg" alt="Photo of the 2020 Cat Pawsitive Team Members">
+			<figcaption>Photo of the 2020 Cat Pawsitive team members.</figcaption>
+		</div>
+		<div class="side">
+			<img class="imgside" src="images/CPP2021sm.jpg" alt="Photo of the 2021 Cat Pawsitive Pro Team Members">
+			<figcaption>Photo of the 2021 Cat Pawsitive Pro team members.</figcaption>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="main">
+			<p>The cats selected to participate were Mandy, Nadia, Sweater, Ryker, and Rudy Rudy. Later in the training Tad joined in on the fun. Each of these cats had unique needs for enrichment with most needing more mental and physical stimulation. Twice a day for four to five days a week these cats worked with our volunteer trainers on skills such as high-five, sit, hoop jumps, spin, place and go to crate. These skills were fun and functional, making each cat easier for medical staff to interact with and increased their adoptability.
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="box">
+			<div><img src="images/MrRudy.jpg" alt="Photo of Rudy Rudy.">
+				<figcaption>Rudy Rudy</figcaption>
+			</div>
+			<div><img src="images/Nadia3-18.jpg" alt="Photo of Nadia.">
+				<figcaption>Nadia</figcaption>
+			</div>
+			<div><img src="images/PAWSRykerWildlyNatural.jpg" alt="Photo of Ryker.">
+				<figcaption>Ryker</figcaption>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="box">
+			<div><img src="images/SweaterDeskWarmer.jpg" alt="Photo of Sweater.">
+				<figcaption>Sweater</figcaption>
+			</div>
+			<div><img src="images/SweetMandy.jpg" alt="Photo of Mandy.">
+				<figcaption>Mandy</figcaption>
+			</div>
+			<div><img src="images/Tad5.jpg" alt="Photo of Tad.">
+				<figcaption>Tad</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="main">
+			<p>Upon the conclusion of the Cat Pawsitive Pro, Erin wanted to keep the momentum going by designing a permanent program to provide clicker training and enrichment for PAWS cats. Together with Cat Pawsitive Pro team leader, Briana Allen, Erin developed training materials, instructional videos, and a data collection process that became Erin’s dream program, Kitty City Clicker Club!
+			</p>
+
+			<p>The Kitty City Clicker Club is open to all Kitty City volunteers. Volunteers will participate in a workshop on training techniques, the program, and its processes and resources. Workshops will run quarterly and new cats will be added to the program on a rolling basis. Kitty City volunteers interested in learning more about the Kitty City Clicker Club can visit Erin the next time they are at LAPC or email her.
+			</p>
+
+			<h2>Upcoming Clicker Training Workshops</h2>
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Location</th>
+					<th>Trainer(s)</th>
+				</tr>
+				<tr>
+					<td>Thursday, October 21, 2021</td>
+					<td>LPAC Community Room</td>
+					<td>Erin Mayes & Briana Allen</td>
+				</tr>
+				<tr>
+					<td>Tuesday, October 26, 2021 </td>
+					<td>Med Center Community Room</td>
+					<td>Erin Mayes & Briana Allen</td>
+				</tr>
+				<tr>
+					<td>Tuesday, November 16, 2021</td>
+					<td>Med Center Community Room</td>
+					<td>Erin Mayes & Briana Allen</td>
+				</tr>
+				<tr>
+					<td>Thursday, November 18, 2021</td>
+					<td>LPAC Community Room</td>
+					<td>Briana Allen</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="row" style="margin-bottom: 5rem;"></div>
+
+
+
+
+	<!-- scripts -->
+
+	<!-- navigation script -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+	<!-- button script -->
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<footer class="footer">
+		<div class="footer-container">
+
+			<a class="footlogo" href="index.html">
+				<img class="logo" src="images/kcccLogo200.png">
+			</a>
+
+			<div class="footsocial">
+				<a href="https://www.facebook.com/pawschicago">
+					<img class="social" src="images/facebookSM.png" alt="Facebook Logo">
+				</a>
+				<a href="https://www.instagram.com/pawschicago/">
+					<img class="social" src="images/instagram.png" alt="Instagram Logo">
+				</a>
+				<a href="https://twitter.com/PAWSChicago">
+					<img class="social" src="images/twitter.png" alt="Twitter Logo">
+				</a>
+			</div>
+
+			<div class="footlinks1">
+				<a href="index.html">HOME</a>
+				<a href="enrichment.html">ENRICHMENT</a>
+				<a href="foster.html">FOSTER RESOURCES</a>
+				<a href="about.html">ABOUT KCCC</a>
+			</div>
+
+			<div class="footlinks2">
+				<a href="training.html">TRAINING OVERVIEW</a>
+				<a href="capturing.html">CAPTURING</a>
+				<a href="targeting.html">TARGETING</a>
+				<a href="luring.html">LURING</a>
+				<a href="shaping.html">SHAPING</a>
+			</div>
+
+			<div class="cta">
+				<a href="mailto:bla925@gmail.com"><button class="footbutton">Learn more about KCCC</button></a>
+				<div class="copyright">
+					&copy;2021 Site Design by Briana Allen
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+</html>

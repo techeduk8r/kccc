@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kitty City Clicker Club</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+<!-- responsive top nav -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body {
+	  margin: 0;
+	  font-family: Bebas Neue, sans-serif;
+	  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #00afaa;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: #FFcd00;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: #00afaa;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #00afaa;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: fixed;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!--top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Training Techniques 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+    	<a href="training.html"   class="active">Training Overview</a>
+      <a href="capturing.html">Capturing</a>
+      <a href="targeting.html">Targeting</a>
+      <a href="luring.html">Luring</a>
+      <a href="shaping.html">Shaping</a>
+    </div>
+  </div> 
+  <a href="enrichment.html">Enrichment</a>
+  <a href="foster.html">Foster Resources</a>
+  <a href="about.html">About KCCC</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div>
+  <video autoplay muted loop src="media/KC3SampleHeader.mp4"></video>
+</div>
+
+<div class="row">
+	<div class="main">
+		<h1>Clicker Training Overview</h1>
+		<p>
+			Clicker training is a positive-reinforcement based method of behavior training. Using simple tools and techniques, we reward our cats for desirable behaviors that we want to see repeated. Trainers work with cats to associate the sound of a click with a desired reward. This association is then used to reinforce behaviors that are both functional and fun. Behaviors can include high-fives, place, go to crate, and combinations of behaviors. 
+		</p>
+		<p>Training techniques include capturing, targeting, luring, and shaping. Each technique will be discussed and includes a demonstration video of the technque ans well as training resources. 
+		</p>
+	</div>
+</div>
+	
+<div class="row">
+		<div class="main">
+		<h1>Getting Started</h1>
+			<h2>Tools</h2>
+				<p>Clickers and target sticks can be found at most pet supply stores and online.  The clicker is what you will use to “mark” or identify the specific behaviors you want to see repeated.  As soon as your cat performs the desired behavior, be sure to click immediately.  The sound of the click will let the cat know exactly what she or he needs to do to get their reward. </p>
+				<p>The sound of the click is very important. If you click the clicker, you owe the cat a reward. Also, timing of hte click is crucial to help your cat understand what behavior you are rewarding. The handout <a href="files/2021 CP Building Your Clicker Skills Handout.pdf"> Build Your Clicker Training Skills</a> provides three different games to assit in building good observational and ckicking skills.</p>
+				<p>If you do not have a clicker or target stick, be sure to watch our video on making your own target stick.</p>
+	</div>
+	<div class="side">
+		<img class="imgside" src="images/sitClickTreat.png" alt="Graphic showing a cat sitting, a clicker, and a bag of treats. The image represent a process with arrows indicating a cycle. The words Sit Click Treat are at the top of the image.">
+
+		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XgOTjvfWEC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+
+<div class="row">
+	<div class="main">
+		<h2>Rewards</h2>
+			<p>
+				In order to motivate our cats to perform desired behaviors, we want to offer them a reward that they will literally jump through hoops to obtain.  For many cats, this means finding a food reward they cannot resist. 
+				If your cat is just starting training, you will likely need to experiment to find a reward that they will go bonkers over.
+				Once you find your cat’s jackpot reward item, reserve it for training sessions.
+			</p>
+			<p>Review the handout <a href="files/2021 CP Choosing _ Using Reinforcers.pdf"> Choosing and Using Reinforcers</a> for tips on how to select and use rewards.</p>
+	</div>
+	<div class="side">
+		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hwIfvYAQIDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p class="caption">Gino was an extremely shy cat who never approached humans. After clicker training Gino became more confident and would choose to interact with humans from the safety of his barrel. </p>
+	</div>
+</div>
+<div class="row">
+	<div class="main">
+		<h2>Reward Tips</h2>
+		<ul>
+			<li><h3>Check for dietary restrictions</h3>Check to see if your cat has any dietary restrictions before starting to look for rewards.  If your cat is already on a prescription diet that he loves, you can use his regular dry or canned food as a reward during training.  </li>
+			<li><h3>Break Up Treats</h3>Always use the smallest amount that you can when offering rewards.  You will be clicking and treating a lot during your sessions, and you don’t want to overfeed.  Break hard treats up into smaller pieces prior to your session.  You can also reduce the amount of food offered during regular meals to prevent over-feeding.  Cats at the adoption center are weighed weekly to track any significant weight gain or loss.  If you’re worried that your foster cat may be gaining too much weight from training, alert your foster counselor or manager, so our veterinarians can determine an appropriate meal plan.</li>
+			<li><h3>Train when your cat is hungry</h3>Try scheduling training sessions a few hours before or after a meal to ensure that your cat is hungry and motivated to learn.  If you plan to train during a cat’s scheduled meal time, let the Animal Care Department know.  We can withhold feeding until after your session ends if needed.</li> 
+			<li><h3>Food isn’t the only reward</li></h3>If food isn’t your cat’s favorite, be creative.  What does your cat love the most?  Wand toys? Lasers?  Pets and verbal praise?  Although food rewards are the most common, they are not the only way to reinforce behavior.</li>
+		</ul>
+	</div>
+	<div class="side">
+		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlDiQK5eznw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p class="caption">Aslan was a very affectionate and social cat.  We were able to train him to sit by rewarding him with pets and verbal praise.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="main">
+		<h2>Charging the Clicker</h2>
+			<p>Charging the clicker is a process of teaching your cat to associate the sound of the click with a reward. This process doesn't take long, especially if you have a food motivated cat. Charging the clicker is done in one session where you click the clicker and give the cat a treat. This is repeated several times, each time tossing the treat away from you. As you progress, the cat will quickly come back to you when the click is heard. Take a look at Erin charging the clicker. 
+			</p>
+	</div>
+	<div class="side">
+		<video src="media/ChargeClicker.mp4" controls></video>
+	</div>
+</div>
+
+
+<div><h2 style="color: black; padding-left: 1.25rem;">Learn About the Training Methods</h2></div>
+<div class="tgrid-container">
+		<div>
+			<h2><img class="icon" src="images/searching.png">Capturing</h2>
+			<p>Capturing is the most basic method of clicker training. Trainers observe a cat and select a behavior they wish to see repeated. Every time the cat completes the behavior the trainer clicks and rewards the cat.</p>
+			<button class="tgrid-button"><a href="capturing.html"> Learn about Capturing</a></button>
+			</div>
+		<div>
+			<h2><img class="icon" src="images/pointer.png">Targeting</h2>
+			<p>Targeting is a method that uses an object to encourage a cat to engage in behaviors. Targeting is helpful in training cats to move from place to place or as a transition to high-fives.</p>
+			<button class="tgrid-button"><a href="targeting.html"> Learn about Targeting</a></button>
+		</div>
+		<div>
+			<h2><img class="icon" src="images/snack.png">Luring</h2>
+			<p>Luring involves the use of treats or targets to encourage cats to engage in a particular behavior. The lure serves as the initial steps into a behavior but is removed over time.</p>
+			<button class="tgrid-button"><a href="luring.html"> Learn about Luring</a></button>
+		</div>
+		<div>
+			<h2><img class="icon" src="images/process.png">Shaping</h2>
+			<p>Shaping is a technique that breaks behaviors down into steps. Shaping can use capturing, luring, and targeting as steps towards an end goal.</p>
+			<button class="tgrid-button"><a href="shaping.html"> Learn about Shaping</a></button>
+		</div>
+</div>	
+
+
+
+
+<!-- scripts -->
+
+<!-- navigation script -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- button script -->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>	
+	
+<footer class="footer">
+	<div class="footer-container">
+	
+		<a class="footlogo" href="index.html">
+			<img src="images/kcccLogo200.png">
+		</a>
+
+		<div class="footsocial">
+			<a href="https://www.facebook.com/pawschicago">
+				<img src="images/facebookSM.png" alt="Facebook Logo">
+			</a>
+			<a href="https://www.instagram.com/pawschicago/">
+				<img src="images/instagram.png" alt="Instagram Logo">
+			</a>
+			<a href="https://twitter.com/PAWSChicago">
+				<img src="images/twitter.png" alt="Twitter Logo">
+			</a>	
+		</div>
+
+		<div class="footlinks1">
+			<a href="index.html">HOME</a>
+			<a href="enrichment.html">ENRICHMENT</a>
+			<a href="foster.html">FOSTER RESOURCES</a>
+			<a href="about.html">ABOUT KCCC</a>
+		</div>
+
+			<div class="footlinks2">
+			<a href="training.html">TRAINING OVERVIEW</a>
+			<a href="capturing.html">CAPTURING</a>
+			<a href="targeting.html">TARGETING</a>
+			<a href="luring.html">LURING</a>
+			<a href="shaping.html">SHAPING</a>
+		</div>
+
+		<div class="cta">
+			<a href="mailto:bla925@gmail.com"><button class="footbutton">Learn more about KCCC</button></a>
+			<div class="copyright">
+				&copy;2021 Site Design by Briana Allen 
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+</body>
+</html>
